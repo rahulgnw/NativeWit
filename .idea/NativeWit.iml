@@ -9,6 +9,12 @@
       <excludeFolder url="file://$MODULE_DIR$/dart-training/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/dart-training/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/dart-training/build" />
+      <excludeFolder url="file://$MODULE_DIR$/GoMoonApp/go_moon/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/GoMoonApp/go_moon/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/GoMoonApp/go_moon/build" />
+      <excludeFolder url="file://$MODULE_DIR$/chatify/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/chatify/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/chatify/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
