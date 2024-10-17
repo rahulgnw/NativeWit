@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../widgets/app_text_form_field.dart';
 class LoginPage extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
@@ -15,24 +17,30 @@ class _LoginPageState extends State<LoginPage>{
   Widget build(BuildContext context) {
     _deviceHeight = MediaQuery.of(context).size.height;
     _deviceWidth = MediaQuery.of(context).size.width;
-    return Scaffold(
-      body: SafeArea(
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: _deviceWidth! * 0.05),
-          child: Center(child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment:CrossAxisAlignment.center,
-            children: [
-              _titleWidget(),
-              _loginForm(),
-              _loginButton(),
-              _registerPageLink(),
-            ],
-          ),
-          ),
-        ),
-      ),);
+    return Stack(
+      children: [
+
+          Scaffold(
+            backgroundColor: Colors.transparent,
+          body: SafeArea(
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: _deviceWidth! * 0.05),
+              child: Center(child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment:CrossAxisAlignment.center,
+                children: [
+                  _titleWidget(),
+                  _loginForm(),
+                  _loginButton(),
+                  _registerPageLink(),
+                ],
+              ),
+              ),
+            ),
+          ),),
+        ],
+    );
   }
 
   Widget _titleWidget() {
@@ -60,9 +68,8 @@ class _LoginPageState extends State<LoginPage>{
     );
   }
   Widget _emailTextField(){
-    return TextFormField(
-
-decoration: const InputDecoration(hintText: "Email address...."),
+    return AppTextFormField(
+hintText: "Email address....",
     onSaved: (_value){
   setState(() {
 _email = _value;
