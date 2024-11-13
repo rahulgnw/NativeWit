@@ -18,6 +18,33 @@
       <excludeFolder url="file://$MODULE_DIR$/go_moon/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/go_moon/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/go_moon/build" />
+      <excludeFolder url="file://$MODULE_DIR$/newapp/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/newapp/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/newapp/build" />
+      <excludeFolder url="file://$MODULE_DIR$/http_protocal/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/http_protocal/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/http_protocal/build" />
+      <excludeFolder url="file://$MODULE_DIR$/test_http/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/test_http/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/test_http/build" />
+      <excludeFolder url="file://$MODULE_DIR$/serilization/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/serilization/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/serilization/build" />
+      <excludeFolder url="file://$MODULE_DIR$/test_serialization/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/test_serialization/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/test_serialization/build" />
+      <excludeFolder url="file://$MODULE_DIR$/provider/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/provider/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/provider/build" />
+      <excludeFolder url="file://$MODULE_DIR$/movie_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/movie_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/movie_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/rxdart/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/rxdart/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/rxdart/build" />
+      <excludeFolder url="file://$MODULE_DIR$/counter_flavour/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/counter_flavour/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/counter_flavour/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

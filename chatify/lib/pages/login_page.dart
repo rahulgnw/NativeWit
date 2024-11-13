@@ -89,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _passwordTextField() {
     return AppTextFormField(
-      obsecure: true,
+      obscure: true,
       onSaved: (_value) {
         setState(() {
           _password = _value;
@@ -120,8 +120,8 @@ class _LoginPageState extends State<LoginPage> {
       child: const Text("Create Account",
           style: TextStyle(
             color: Colors.blue,
-            fontSize: 25,
-            fontWeight: FontWeight.w600,
+            fontSize: 20,
+            fontWeight: FontWeight.w400,
           )),
     );
   }

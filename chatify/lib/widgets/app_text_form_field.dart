@@ -6,18 +6,21 @@ class AppTextFormField extends StatelessWidget {
     required this.hintText,
     this.onSaved,
     this.validator,
-     this.obsecure=false,
+    this.obscure = false,
+    this.onPressed,
   });
 
   final String hintText;
   final void Function(String?)? onSaved;
   final String? Function(String?)? validator;
-  final bool obsecure;
+  final bool obscure;
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      obscureText: obsecure,
+      obscureText: obscure,
+      validator: validator,
       decoration: InputDecoration(
         hintText: hintText,
         filled: true,

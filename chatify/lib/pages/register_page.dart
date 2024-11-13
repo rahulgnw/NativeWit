@@ -16,6 +16,7 @@ class _RegisterPageState extends State<RegisterPage> {
   String? _user;
   String? _password;
   String? _confirmpassword;
+
   final GlobalKey<FormState> _registerFormKey = GlobalKey<FormState>();
 
   @override
@@ -36,8 +37,9 @@ class _RegisterPageState extends State<RegisterPage> {
             children: [
               _titleWidget(),
               _registrationForm(),
-              _registerbutton(),
-              _registerPageLink()
+              _registerButton(),
+              _registerPageLink(),
+
             ],
           ),
         ),
@@ -64,7 +66,8 @@ class _RegisterPageState extends State<RegisterPage> {
           children: [
             _nameTextField(),
             _passwordTextField (),
-            _confirmPassword()
+            _confirmPassword(),
+
           ],
         ),
       ),
@@ -73,7 +76,9 @@ class _RegisterPageState extends State<RegisterPage> {
   }
   Widget _nameTextField () {
     return AppTextFormField(
+
       hintText: "Enter username",
+
       onSaved: (_value) {
         setState(() {
           _user=_value;
@@ -116,11 +121,17 @@ class _RegisterPageState extends State<RegisterPage> {
       },
     );
   }
+  Widget _backButton(){
+    return MaterialButton(onPressed: (){},
+    );
+  }
 
 
-  Widget _registerbutton() {
+  Widget _registerButton() {
     return MaterialButton(
-      onPressed: () {},
+      onPressed: () {
+
+      },
       minWidth: _deviceWidth! * 0.50,
       height: _deviceHeight! * 0.05,
       color: Colors.blue,
@@ -146,3 +157,4 @@ class _RegisterPageState extends State<RegisterPage> {
     );
   }
 }
+
