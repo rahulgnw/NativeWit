@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text(appTitle),
         ),
-        // #docregion add-widget
+
         body: const SingleChildScrollView(
           child: Column(
             children: [
@@ -234,9 +234,6 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
       }
     });
   }
-  // #enddocregion toggle-favorite
-
-  // #docregion favorite-state-build
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -263,6 +260,4 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
       ],
     );
   }
-// #docregion favorite-state-fields
 }
-// #enddocregion favorite-state, favorite-state-fields, favorite-state-build
